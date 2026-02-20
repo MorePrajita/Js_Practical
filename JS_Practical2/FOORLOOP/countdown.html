@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown</title>
+</head>
+<body>
+
+<h2>Countdown</h2>
+<button onclick="countDown()">Start</button>
+
+<p id="result"></p>
+
+<script>
+function countDown() {
+    let output = "";
+
+    for (let i = 10; i >= 1; i--) {
+        output += i + " ";
+    }
+
+    output += "<br>Blast off!";
+    document.getElementById("result").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of 1 to 10</title>
+</head>
+<body>
+
+<h2>Sum of First 10 Natural Numbers</h2>
+<button onclick="calculateSum()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function calculateSum() {
+    let i = 1;
+    let sum = 0;
+
+    while (i <= 10) {
+        sum += i;
+        i++;
+    }
+
+    document.getElementById("result").innerHTML = "Sum = " + sum;
+}
+</script>
+
+</body>
+</html>

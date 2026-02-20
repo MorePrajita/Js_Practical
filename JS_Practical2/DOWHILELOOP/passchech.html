@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Check</title>
+</head>
+<body>
+
+<h2>Password Check</h2>
+<button onclick="checkPassword()">Enter Password</button>
+
+<script>
+function checkPassword() {
+    let password;
+
+    do {
+        password = prompt("Enter password:");
+    } while (password !== "1234");
+
+    alert("Access Granted!");
+}
+</script>
+
+</body>
+</html>

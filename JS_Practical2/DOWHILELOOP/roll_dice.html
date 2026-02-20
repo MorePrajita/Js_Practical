@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dice Roll</title>
+</head>
+<body>
+
+<h2>Roll Dice Until 6</h2>
+<button onclick="rollDice()">Roll</button>
+
+<p id="result"></p>
+
+<script>
+function rollDice() {
+    let output = "";
+    let roll;
+
+    do {
+        roll = Math.floor(Math.random() * 6) + 1;
+        output += "Rolled: " + roll + "<br>";
+    } while (roll !== 6);
+
+    document.getElementById("result").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

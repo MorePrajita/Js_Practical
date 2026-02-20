@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Divisible by 7</title>
+</head>
+<body>
+
+<h2>First Number After 500 Divisible by 7</h2>
+<button onclick="findNumber()">Find</button>
+
+<p id="result"></p>
+
+<script>
+function findNumber() {
+    let num = 501;
+
+    while (num % 7 !== 0) {
+        num++;
+    }
+
+    document.getElementById("result").innerHTML = num;
+}
+</script>
+
+</body>
+</html>
