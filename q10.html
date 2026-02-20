@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Check</title>
+</head>
+<body>
+
+<h2>Weather & Temperature</h2>
+
+<select id="weather">
+    <option value="Sunny">Sunny</option>
+    <option value="Rainy">Rainy</option>
+</select>
+
+<input type="number" id="temp" placeholder="Enter Temperature">
+<button onclick="checkWeather()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function checkWeather() {
+    let weather = document.getElementById("weather").value;
+    let temp = document.getElementById("temp").value;
+
+    if (weather === "Sunny") {
+        if (temp > 30) {
+            document.getElementById("result").innerHTML = "Wear sunscreen";
+        } else {
+            document.getElementById("result").innerHTML = "Enjoy the day";
+        }
+    } else {
+        document.getElementById("result").innerHTML = "Carry an umbrella";
+    }
+}
+</script>
+
+</body>
+</html>

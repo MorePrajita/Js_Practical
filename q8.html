@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FizzBuzz</title>
+</head>
+<body>
+
+<h2>FizzBuzz</h2>
+<input type="number" id="num">
+<button onclick="fizzBuzz()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function fizzBuzz() {
+    let number = document.getElementById("num").value;
+
+    if (number % 3 === 0 && number % 5 === 0) {
+        document.getElementById("result").innerHTML = "FizzBuzz";
+    } else if (number % 3 === 0) {
+        document.getElementById("result").innerHTML = "Fizz";
+    } else if (number % 5 === 0) {
+        document.getElementById("result").innerHTML = "Buzz";
+    } else {
+        document.getElementById("result").innerHTML = "Not a multiple of 3 or 5";
+    }
+}
+</script>
+
+</body>
+</html>

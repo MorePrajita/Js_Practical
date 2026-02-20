@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even or Odd</title>
+</head>
+<body>
+
+<h2>Check Even or Odd</h2>
+<input type="number" id="num">
+<button onclick="checkEven()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function isEven(n) {
+    return n % 2 === 0;
+}
+
+function checkEven() {
+    let number = document.getElementById("num").value;
+    let result = isEven(number);
+
+    document.getElementById("result").innerHTML = result;
+}
+</script>
+
+</body>
+</html>

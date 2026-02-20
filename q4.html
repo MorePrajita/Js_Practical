@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compare Numbers</title>
+</head>
+<body>
+
+<h2>Find Larger Number</h2>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<button onclick="compare()">Compare</button>
+
+<p id="result"></p>
+
+<script>
+function compare() {
+    let a = parseInt(document.getElementById("num1").value);
+    let b = parseInt(document.getElementById("num2").value);
+
+    if (a > b) {
+        document.getElementById("result").innerHTML = a + " is larger";
+    } else if (b > a) {
+        document.getElementById("result").innerHTML = b + " is larger";
+    } else {
+        document.getElementById("result").innerHTML = "Both are equal";
+    }
+}
+</script>
+
+</body>
+</html>
